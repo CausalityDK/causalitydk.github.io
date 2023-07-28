@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "Lucida Console";
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Lucida Console";
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lucida Console";
+    font-style: normal;
+    font-weight: 500;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+* {
+  margin:0;
+  padding: 0;
+  line-height: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+  font-family: "Lucida Console",monospace;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+  font-size: 15px;
+  box-sizing:border-box;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+ * Improve readability when focused and also mouse hovegrey in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-size: inherit;
+  margin:0;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*-------*/
+
+::selection {
+  background: #4169E1;
+}
+::-moz-selection {
+  background: #4169E1;
+}
+
+
+main {
+  margin: 30px 60px 50px;
+  max-width: 800px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 0;
+}
+
+main .sign {
+  font-size: 13px;
+  //font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main section {
+  margin-top: 50px;
+  border-left: 10px solid green;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+company section {
+  margin-top: 50px;
+  border-left: 10px solid black;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+whatwedo section {
+  margin-top: 50px;
+  border-left: 10px solid royalblue;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+preperation section {
+  margin-top: 50px;
+  border-left: 10px solid green;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+incident section {
+  margin-top: 50px;
+  border-left: 10px solid red;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+assessment section {
+  margin-top: 50px;
+  border-left: 10px solid grey;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+contact section {
+  margin-top: 50px;
+  border-left: 10px solid black;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+main section:first-child {
+  margin-top: 0;
+}
+
+main p, main ul, main h2, main h1 {
+  margin-top: 25px;
+  line-height: 1.4;
+  font-size: 15px;
+  color: #111;
+  overflow: hidden;
+}
+
+main ul li {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+main p.big, main h2.big {
+  font-size: 40px;
+  color: #222;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+main h1.name {
+  font-size: 24px;
+  color: #222;
+  margin-top: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+main p:first-child {
+  margin-top: 0;
+}
+
+main a {
+  background: aqua;
+}
+
+main a:hover {
+  background: #4169E1;
+}
+
+main b {	
+  font-weight: 700;
+}
+
+main .star {
+  color: grey;
+}
+
+.time {
+  top: 35px;
+  right: 80px;
+  margin: 0;
+  border-bottom: 1px dashed;
+  font-size: 12.5px;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+@media only screen 
+and (max-width: 480px) {
+  main {
+    margin: 10px 20px 15px;
+    padding: 15px 0;
+  }
+
+  main section {
+    padding-left: 20px;
+    border-left: 8px solid yellow;
+    padding-left: 0;
+    border: 0;
+    margin-top: 40px;
+  }
+
+  main h2.big {
+    font-size: 34px;
+  }
+
+  main h1.name {
+    font-size: 24px;
+  }
+
+  main ul li {
+    line-height: 1.45;
+  }
+}
